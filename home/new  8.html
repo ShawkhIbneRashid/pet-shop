@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Pacifico">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Philosopher">
+<style>
+.image-source{
+background-image: url("makro-steklo-kapli-bryzgi.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+	}
+table, td, th {
+    border: 1px #00008B;
+	font-size:20px;
+	color: #00008B;
+}
+.ima{
+position: relative;
+text-align:center;
+width: 100%;
+}
+.vma{
+	width: 100%;
+  max-width: 960px;
+  margin-left:169px;
+}
+nav {
+ width: 100%;
+ margin: 20px 0; }
+
+nav ul {
+  list-style: none;
+  overflow: hidden; }
+nav ul li {
+  float: left;
+  width: 20%; }
+nav ul li a {
+  text-align: center;
+  padding: 8px 0;
+  display: block;
+  width: 100%;
+  background: #cdeb8e;
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+}
+nav ul li a,
+nav ul li a:focus,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active {
+  color: #000;
+  text-decoration: none; }
+nav ul li a:hover,
+nav ul li a:active {
+  background: #b0ca34; /* Old browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ca34', endColorstr='#96c40d',GradientType=0 ); /* IE6-9 */
+}
+nav ul li:first-child a {
+border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+nav ul li:last-child a {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+.ema{
+border: 3px solid #062A78;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    background-color: #333399;
+	color:black;
+	font-size: 20px;
+}
+h2{
+text-align: center;
+color: #FF033E;
+font-size: 48px;
+position: absolute;
+top: 1px;
+left: 0;
+width: 100%;
+}
+ #map {
+        height: 400px;
+		max-width: 960px;
+		margin-top: 40px;
+		margin-left:190px;
+		margin-bottom: 40px;
+        width: 100%;
+       }
+</style>
+<script type="text/javascript">
+<!-->
+var image1=new Image()
+image1.src="tumblr_ns0kf8jgIE1u34fyoo1_1280.jpg"
+
+var image2=new Image()
+image2.src="black-and-white-cat-names-sm.jpg"
+
+var image3=new Image()
+image3.src="20-July-2015-ROCKY-slant.jpg"
+//-->
+</script>
+</head>
+<body class="image-source">
+
+<div class="ima" >
+
+<img src="tumblr_ns0kf8jgIE1u34fyoo1_1280.jpg" name="slide" width="900" height="400" >
+<h2 style="font-family:Pacifico"> pet on,game on <br/>
+</div>
+<script type="text/javascript">
+<!--
+var step=1
+function slideit(){
+document.images.slide.src=eval("image"+step+".src")
+if(step<3)
+step++
+else
+step=1
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+<div class="vma">
+<nav>
+  <ul>
+    <li>
+       <a href="file:///F:/5th%20semester/project/my/super%20dogs/new%20%2011.html">Super Dogs</a>
+    </li>
+    <li>
+      <a href="file:///F:/5th%20semester/project/my/cats/new%20%2013.html">Wonder Cats</a>
+    </li>
+    <li>
+      <a href="file:///F:/5th%20semester/project/my/birds/new%20%2014.html">cheering birds</a>
+    </li>
+    <li>
+      <a href="file:///F:/5th%20semester/project/my/fish/new%20%2015.html">bubble fishes</a>
+    </li>
+    <li>
+      <a href="http://localhost/ratul/login.php">Shop</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<div class="ema">
+<p style="font-family:Lobster">   We "pet on,game on" is a recognised pet shop creating friendship among humans and pets. Pets can be a good pass time. They also tend to show loyalty toward their superiors. 
+If you are interested, you can choose your favourite one from our collection. You can see our collection but to place an order you have to register once and from next visits you can
+ just log in. After full payment the specified pet will be sent to your address or you can collect from our shop pointed in the map below. Thank you.</p>
+</div>
+<div id="map"></div>
+    <script>
+
+      function initMap() {
+        var uluru = {lat: 23.794, lng: 90.4043};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA52i-fD8y3meEoECQK5aar98KgSvjwSqg&callback=initMap">
+    </script>
+</body>
+</html>

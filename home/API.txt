@@ -1,0 +1,2 @@
+Google API key: AIzaSyA52i-fD8y3meEoECQK5aar98KgSvjwSqg
+Google maps javascript API
